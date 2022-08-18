@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "0a69395c-a8f9-4e0c-909b-93105ec1b1e7",
+		"name": "Sports_Ruby",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2869230"
+	},
+	"item": [
+		{
+			"name": "Post Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Football\",\r\n    \"governingBody\": \"National Football association\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Division",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"game_id\": 1,\r\n    \"name\":  \"Second division\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games/1/divisions",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games",
+						"1",
+						"divisions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Division",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games/1/divisions",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games",
+						"1",
+						"divisions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"division_id\":1,\r\n    \"name\": \"Arsenal\",\r\n    \"managerName\": \"Mikel Arteta\",\r\n    \"managerContact\":\"020 7619 5000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games/1/divisions/1/teams",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games",
+						"1",
+						"divisions",
+						"1",
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mighty-sea-70495.herokuapp.com/api/v1/games/1/divisions/1/teams",
+					"protocol": "https",
+					"host": [
+						"mighty-sea-70495",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"games",
+						"1",
+						"divisions",
+						"1",
+						"teams"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
