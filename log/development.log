@@ -1,0 +1,1166 @@
+Started GET "/" for 127.0.0.1 at 2022-08-18 11:10:55 +0545
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.8ms | Allocations: 878)
+Completed 200 OK in 85ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 7943)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:19:30 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220818052737_create_games.rb
+20220818052809_create_divisions.rb
+20220818052850_create_teams.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:93:in `execute_if_updated'
+activerecord (7.0.3.1) lib/active_record/migration.rb:599:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-08-18 11:19:31 +0545
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20220818052737_create_games.rb
+20220818052809_create_divisions.rb
+20220818052850_create_teams.rb
+
+
+):
+  
+activerecord (7.0.3.1) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.3.1) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.3.1) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGames (20220818052737)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "governingBody" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220818052737"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDivisions (20220818052809)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_f82f15ff7c"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_game_id" ON "divisions" ("game_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220818052809"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTeams (20220818052850)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "division_id" integer NOT NULL, "managerName" varchar, "managerContact" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_f5e3e59211"
+FOREIGN KEY ("division_id")
+  REFERENCES "divisions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_teams_on_division_id" ON "teams" ("division_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220818052850"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-18 05:34:52.439034"], ["updated_at", "2022-08-18 05:34:52.439034"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:20:02 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games"):
+  
+Started GET "/favicon.ico" for ::1 at 2022-08-18 11:20:02 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:20:37 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games"):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:21:40 +0545
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:21:41 +0545
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:22:16 +0545
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:23:02 +0545
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:26:06 +0545
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:26:07 +0545
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:26:16 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:28:28 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:30:14 +0545
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:31:33 +0545
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/API/V1/games" for ::1 at 2022-08-18 11:32:41 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/API/V1/games"):
+  
+Started GET "/" for ::1 at 2022-08-18 11:32:48 +0545
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"welcome"=>{}}
+  Rendering C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 750)
+Completed 200 OK in 17ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 6472)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:32:55 +0545
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:03 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.7ms | Allocations: 1165)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:13 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.8ms | Allocations: 1066)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:14 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 757)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:17 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 761)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:24 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 759)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:33 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 1.2ms | ActiveRecord: 0.7ms | Allocations: 14242)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:35 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 778)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:42 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 759)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:43 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 759)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:44 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 759)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:45 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 747)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:34:52 +0545
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:35:09 +0545
+  
+ActionController::RoutingError (uninitialized constant Api::V1::GamesController
+Did you mean?  Api::V1::GameController):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:35:16 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 40ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 14243)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:42:40 +0545
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:7:in `index'
+Completed 200 OK in 42ms (Views: 1.6ms | ActiveRecord: 0.7ms | Allocations: 14242)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 11:42:48 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:7:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.7ms | Allocations: 1067)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Create (1.6ms)[0m  [1m[32mINSERT INTO "games" ("name", "governingBody", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Football"], ["governingBody", "FIFA"], ["created_at", "2022-08-18 06:47:12.195177"], ["updated_at", "2022-08-18 06:47:12.195177"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.4ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Division 1"], ["game_id", 1], ["created_at", "2022-08-18 06:47:12.263170"], ["updated_at", "2022-08-18 06:47:12.263170"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/games" for ::1 at 2022-08-18 12:32:15 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.7ms | Allocations: 5134)
+
+
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 12:32:41 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games/1/divisions"):
+  
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+Started POST "/api/v1/games/" for ::1 at 2022-08-18 12:37:37 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#create as */*
+  Parameters: {"name"=>"Cricket", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket", "governingBody"=>"BCCI"}}
+[31mUnpermitted parameter: :game. Context: { controller: Api::V1::GamesController, action: create, request: #<ActionDispatch::Request:0x000002c67a3d9be8>, params: {"name"=>"Cricket", "governingBody"=>"BCCI", "controller"=>"api/v1/games", "action"=>"create", "game"=>{"name"=>"Cricket", "governingBody"=>"BCCI"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:10:in `create'
+  [1m[36mGame Create (0.6ms)[0m  [1m[32mINSERT INTO "games" ("name", "governingBody", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cricket"], ["governingBody", "BCCI"], ["created_at", "2022-08-18 06:52:37.387854"], ["updated_at", "2022-08-18 06:52:37.387854"]]
+  ↳ app/controllers/api/v1/games_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 4087)
+
+
+Started GET "/api/v1/games/" for ::1 at 2022-08-18 12:37:43 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Cricket", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1217)
+
+
+Started DELETE "/api/v1/games/2" for ::1 at 2022-08-18 12:41:30 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#destroy as */*
+  Parameters: {"name"=>"Cricket", "governingBody"=>"BCCI", "id"=>"2", "game"=>{"name"=>"Cricket", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:27:in `destroy'
+  [1m[36mGame Destroy (0.7ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/games_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:27:in `destroy'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 4591)
+
+
+Started GET "/api/v1/games/2" for ::1 at 2022-08-18 12:41:34 +0545
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::GamesController):
+  
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/games/" for ::1 at 2022-08-18 12:41:38 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Cricket", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 972)
+
+
+Started PUT "/api/v1/games/1" for ::1 at 2022-08-18 12:41:52 +0545
+Processing by Api::V1::GamesController#update as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+[31mUnpermitted parameters: :id, :game. Context: { controller: Api::V1::GamesController, action: update, request: #<ActionDispatch::Request:0x000002c677940620>, params: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "controller"=>"api/v1/games", "action"=>"update", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}} }[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 723)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/api/v1/games_controller.rb:18:in `update'
+Started GET "/api/v1/games" for ::1 at 2022-08-18 12:42:16 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 899)
+
+
+Started PUT "/api/v1/games/1" for ::1 at 2022-08-18 12:42:26 +0545
+Processing by Api::V1::GamesController#update as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+[31mUnpermitted parameters: :id, :game. Context: { controller: Api::V1::GamesController, action: update, request: #<ActionDispatch::Request:0x000002c6796c97f0>, params: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "controller"=>"api/v1/games", "action"=>"update", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}} }[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 653)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/api/v1/games_controller.rb:18:in `update'
+Started PUT "/api/v1/games/1" for ::1 at 2022-08-18 12:44:21 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#update as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:18:in `update'
+[31mUnpermitted parameters: :id, :game. Context: { controller: Api::V1::GamesController, action: update, request: #<ActionDispatch::Request:0x000002c67a84ab28>, params: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "controller"=>"api/v1/games", "action"=>"update", "id"=>"1", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `update'
+  [1m[36mGame Update (0.5ms)[0m  [1m[33mUPDATE "games" SET "name" = ?, "governingBody" = ?, "updated_at" = ? WHERE "games"."id" = ?[0m  [["name", "Cricket Update"], ["governingBody", "BCCI"], ["updated_at", "2022-08-18 06:59:21.202532"], ["id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:19:in `update'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 4605)
+
+
+Started GET "/api/v1/games" for ::1 at 2022-08-18 12:44:26 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 980)
+
+
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 12:44:54 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games/1/divisions"):
+  
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 12:50:11 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games/1/divisions"):
+  
+Started GET "/api/v1/games" for ::1 at 2022-08-18 12:50:18 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Cricket Update", "governingBody"=>"BCCI", "game"=>{"name"=>"Cricket Update", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 2225)
+
+
+Started PUT "/api/v1/games/1/" for ::1 at 2022-08-18 12:50:28 +0545
+Processing by Api::V1::GamesController#update as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "game"=>{"name"=>"Cricket Updatsss", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+[31mUnpermitted parameters: :id, :game. Context: { controller: Api::V1::GamesController, action: update, request: #<ActionDispatch::Request:0x000002c679859778>, params: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "controller"=>"api/v1/games", "action"=>"update", "id"=>"1", "game"=>{"name"=>"Cricket Updatsss", "governingBody"=>"BCCI"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:23:in `update'
+  [1m[36mGame Update (0.5ms)[0m  [1m[33mUPDATE "games" SET "name" = ?, "updated_at" = ? WHERE "games"."id" = ?[0m  [["name", "Cricket Updatsss"], ["updated_at", "2022-08-18 07:05:28.527059"], ["id", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/games_controller.rb:23:in `update'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 3093)
+
+
+Started PUT "/api/v1/games/1/divisions/1" for ::1 at 2022-08-18 12:50:43 +0545
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/games/1/divisions/1"):
+  
+Started PUT "/api/v1/games/1/divisions/1" for ::1 at 2022-08-18 12:56:05 +0545
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/games/1/divisions/1"):
+  
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 12:56:13 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games/1/divisions"):
+  
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 12:59:44 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/games/1/divisions"):
+  
+Started GET "/api/v1/divisions" for ::1 at 2022-08-18 13:01:30 +0545
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms | Allocations: 2387)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:01:47 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 126)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:05:04 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:05:05 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" ORDER BY "divisions"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDivision Delete All (3.3ms)[0m  [1m[31mDELETE FROM "divisions"[0m
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:06:24 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 111)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:06:42 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms | Allocations: 1780)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:06:43 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms | Allocations: 111)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:09:43 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms | Allocations: 1773)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game without an ID):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/divisions/1" for ::1 at 2022-08-18 13:14:43 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/divisions/1"):
+  
+Started GET "/api/v1/games/1" for ::1 at 2022-08-18 13:14:55 +0545
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "id"=>"1", "game"=>{"name"=>"Cricket Updatsss", "governingBody"=>"BCCI"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Completed 200 OK in 47ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 19039)
+
+
+Started GET "/api/v1/games/1/divisions/1" for ::1 at 2022-08-18 13:15:01 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "game_id"=>"1", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:39:in `set_division'
+Completed 404 Not Found in 39ms (ActiveRecord: 0.7ms | Allocations: 7098)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Division with [WHERE "divisions"."game_id" = ? AND "divisions"."id" = ?]):
+  
+app/controllers/api/v1/divisions_controller.rb:39:in `set_division'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Delete All (11.9ms)[0m  [1m[31mDELETE FROM "games"[0m
+  [1m[36mDivision Delete All (0.1ms)[0m  [1m[31mDELETE FROM "divisions"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Create (0.5ms)[0m  [1m[32mINSERT INTO "games" ("name", "governingBody", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Football"], ["governingBody", "FIFA"], ["created_at", "2022-08-18 07:31:33.428613"], ["updated_at", "2022-08-18 07:31:33.428613"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.4ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Division 1"], ["game_id", 3], ["created_at", "2022-08-18 07:31:33.448827"], ["updated_at", "2022-08-18 07:31:33.448827"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/games/1/divisions/1" for ::1 at 2022-08-18 13:16:42 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "game_id"=>"1", "id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 564)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=1):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 13:16:53 +0545
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"name"=>"Cricket Updatsss", "governingBody"=>"BCCI", "game_id"=>"1", "division"=>{"name"=>"Cricket Updatsss"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 526)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=1):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/games/1/divisions" for ::1 at 2022-08-18 13:17:00 +0545
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"game_id"=>"1", "division"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 526)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=1):
+  
+app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+Started GET "/api/v1/games/1" for ::1 at 2022-08-18 13:17:08 +0545
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"1", "game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 534)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=1):
+  
+app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Started GET "/api/v1/games/2" for ::1 at 2022-08-18 13:17:22 +0545
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"2", "game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 538)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=2):
+  
+app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Started GET "/api/v1/games" for ::1 at 2022-08-18 13:17:25 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"game"=>{}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1039)
+
+
+Started GET "/api/v1/games/3/divisions" for ::1 at 2022-08-18 13:17:32 +0545
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"game_id"=>"3", "division"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.3ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ?[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:6:in `index'
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.5ms | Allocations: 7688)
+
+
+Started GET "/api/v1/games/1" for ::1 at 2022-08-18 13:18:03 +0545
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"1", "game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 593)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Game with 'id'=1):
+  
+app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Started GET "/api/v1/games/3" for ::1 at 2022-08-18 13:18:07 +0545
+Processing by Api::V1::GamesController#show as */*
+  Parameters: {"id"=>"3", "game"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/games_controller.rb:40:in `set_game'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 696)
+
+
+Started GET "/api/v1/games/3/divisions" for ::1 at 2022-08-18 13:18:13 +0545
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"game_id"=>"3", "division"=>{}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ?[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1417)
+
+
+Started PUT "/api/v1/games/3/divisions/2" for ::1 at 2022-08-18 13:18:37 +0545
+Processing by Api::V1::DivisionsController#update as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "id"=>"2", "division"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:39:in `set_division'
+[31mUnpermitted parameters: :id, :division. Context: { controller: Api::V1::DivisionsController, action: update, request: #<ActionDispatch::Request:0x00000151c3a0c290>, params: {"name"=>"Premiere League", "controller"=>"api/v1/divisions", "action"=>"update", "game_id"=>"3", "id"=>"2", "division"=>{"name"=>"Premiere League"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/divisions_controller.rb:25:in `update'
+  [1m[36mDivision Update (10.2ms)[0m  [1m[33mUPDATE "divisions" SET "name" = ?, "updated_at" = ? WHERE "divisions"."id" = ?[0m  [["name", "Premiere League"], ["updated_at", "2022-08-18 07:33:37.510984"], ["id", 2]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/divisions_controller.rb:25:in `update'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 11.7ms | Allocations: 4126)
+
+
+Started GET "/api/v1/games/3/divisions/2" for ::1 at 2022-08-18 13:18:41 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "id"=>"2", "division"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:39:in `set_division'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1376)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Delete All (0.7ms)[0m  [1m[31mDELETE FROM "games"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Delete All (11.0ms)[0m  [1m[31mDELETE FROM "games"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Create (0.4ms)[0m  [1m[32mINSERT INTO "games" ("name", "governingBody", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Football"], ["governingBody", "FIFA"], ["created_at", "2022-08-18 07:37:27.891158"], ["updated_at", "2022-08-18 07:37:27.891158"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.4ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Division 1"], ["game_id", 3], ["created_at", "2022-08-18 07:37:27.917195"], ["updated_at", "2022-08-18 07:37:27.917195"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" ORDER BY "divisions"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Create (0.4ms)[0m  [1m[32mINSERT INTO "teams" ("name", "division_id", "managerName", "managerContact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Team 1"], ["division_id", 2], ["managerName", "Karan"], ["managerContact", "988988"], ["created_at", "2022-08-18 07:37:27.934140"], ["updated_at", "2022-08-18 07:37:27.934140"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.7ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/api/v1/games" for ::1 at 2022-08-18 13:25:43 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"name"=>"Premiere League", "game"=>{"name"=>"Premiere League"}}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/api/v1/games_controller.rb:4:in `index'
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1607)
+
+
+Started GET "/api/v1/games/3/divisions" for ::1 at 2022-08-18 13:34:16 +0545
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DivisionsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.2ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ?[0m  [["game_id", 3]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:6:in `index'
+Completed 200 OK in 73ms (Views: 10.3ms | ActiveRecord: 1.2ms | Allocations: 29279)
+
+
+Started GET "/api/v1/games/3/divisions/2" for ::1 at 2022-08-18 13:34:22 +0545
+Processing by Api::V1::DivisionsController#show as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "id"=>"2", "division"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:43:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/divisions_controller.rb:39:in `set_division'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1676)
+
+
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:34:28 +0545
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:47:in `set_game'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 1203)
+
+
+  
+NoMethodError (undefined method `teams' for nil:NilClass):
+  
+app/controllers/api/v1/teams_controller.rb:6:in `index'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:35:38 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms | Allocations: 4159)
+
+
+  
+NoMethodError (undefined method `teams' for nil:NilClass):
+  
+app/controllers/api/v1/teams_controller.rb:6:in `index'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:35:40 +0545
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 980)
+
+
+  
+NoMethodError (undefined method `teams' for nil:NilClass):
+  
+app/controllers/api/v1/teams_controller.rb:6:in `index'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:36:19 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:49:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" IS NULL LIMIT ?[0m  [["game_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+Completed 404 Not Found in 14ms (ActiveRecord: 1.5ms | Allocations: 7580)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Division with [WHERE "divisions"."game_id" = ? AND "divisions"."id" IS NULL]):
+  
+app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:37:41 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:49:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.7ms | Allocations: 8586)
+
+
+  
+TypeError (no implicit conversion of Division into String):
+  
+app/controllers/api/v1/teams_controller.rb:45:in `+'
+app/controllers/api/v1/teams_controller.rb:45:in `set_division'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:37:48 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ?[0m  [["division_id", 2]]
+  ↳ app/controllers/api/v1/teams_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 7.5ms | ActiveRecord: 1.8ms | Allocations: 13272)
+
+
+Started GET "/api/v1/games/3/divisions/2/teams/1" for ::1 at 2022-08-18 13:37:57 +0545
+Processing by Api::V1::TeamsController#show as */*
+  Parameters: {"name"=>"Premiere League", "game_id"=>"3", "division_id"=>"2", "id"=>"1", "team"=>{"name"=>"Premiere League"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ? AND "teams"."id" = ? LIMIT ?[0m  [["division_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:39:in `set_team'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 2226)
+
+
+Started PUT "/api/v1/games/3/divisions/2/teams/1" for ::1 at 2022-08-18 13:38:08 +0545
+Processing by Api::V1::TeamsController#update as */*
+  Parameters: {"name"=>"Team Update", "game_id"=>"3", "division_id"=>"2", "id"=>"1", "team"=>{"name"=>"Team Update"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ? AND "teams"."id" = ? LIMIT ?[0m  [["division_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:39:in `set_team'
+[31mUnpermitted parameters: :game_id, :id, :team. Context: { controller: Api::V1::TeamsController, action: update, request: #<ActionDispatch::Request:0x00000260843899b0>, params: {"name"=>"Team Update", "controller"=>"api/v1/teams", "action"=>"update", "game_id"=>"3", "division_id"=>"2", "id"=>"1", "team"=>{"name"=>"Team Update"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:26:in `update'
+  [1m[36mTeam Update (10.3ms)[0m  [1m[33mUPDATE "teams" SET "name" = ?, "updated_at" = ? WHERE "teams"."id" = ?[0m  [["name", "Team Update"], ["updated_at", "2022-08-18 07:53:08.476389"], ["id", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:26:in `update'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 11.9ms | Allocations: 4727)
+
+
+Started POST "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:38:38 +0545
+Processing by Api::V1::TeamsController#create as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+[31mUnpermitted parameters: :created_at, :updated_at, :game_id, :team. Context: { controller: Api::V1::TeamsController, action: create, request: #<ActionDispatch::Request:0x000002608459eb60>, params: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "controller"=>"api/v1/teams", "action"=>"create", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTeam Create (10.7ms)[0m  [1m[32mINSERT INTO "teams" ("name", "division_id", "managerName", "managerContact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Team Update the 2nd"], ["division_id", 2], ["managerName", "Karan the 2nd"], ["managerContact", "988988 update"], ["created_at", "2022-08-18 07:53:38.645600"], ["updated_at", "2022-08-18 07:53:38.645600"]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+Completed 201 Created in 21ms (Views: 0.4ms | ActiveRecord: 12.4ms | Allocations: 4648)
+
+
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:38:43 +0545
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ?[0m  [["division_id", 2]]
+  ↳ app/controllers/api/v1/teams_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 2275)
+
+
+Started DELETE "/api/v1/games/3/divisions/2/teams/1" for ::1 at 2022-08-18 13:38:54 +0545
+Processing by Api::V1::TeamsController#destroy as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "id"=>"1", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ? AND "teams"."id" = ? LIMIT ?[0m  [["division_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:39:in `set_team'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:34:in `destroy'
+  [1m[36mTeam Destroy (0.6ms)[0m  [1m[31mDELETE FROM "teams" WHERE "teams"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:34:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:34:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 2.1ms | Allocations: 3450)
+
+
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:38:59 +0545
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ?[0m  [["division_id", 2]]
+  ↳ app/controllers/api/v1/teams_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 2120)
+
+
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:40:50 +0545
+  
+NameError (undefined local variable or method `set_division' for Api::V1::TeamsController:Class):
+  
+app/controllers/api/v1/teams_controller.rb:2:in `<class:TeamsController>'
+app/controllers/api/v1/teams_controller.rb:1:in `<main>'
+Started GET "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:40:57 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#index as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."division_id" = ?[0m  [["division_id", 2]]
+  ↳ app/controllers/api/v1/teams_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 3.7ms | ActiveRecord: 2.4ms | Allocations: 11461)
+
+
+Started GET "/api/v1/games/" for ::1 at 2022-08-18 13:43:47 +0545
+Processing by Api::V1::GamesController#index as */*
+  Parameters: {"division_id"=>2, "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game"=>{"name"=>"Team Update the 2nd", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY created_at DESC[0m
+  ↳ app/controllers/api/v1/games_controller.rb:6:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1376)
+
+
+Started POST "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:44:48 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#create as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+[31mUnpermitted parameters: :managerContact, :created_at, :updated_at, :game_id, :team. Context: { controller: Api::V1::TeamsController, action: create, request: #<ActionDispatch::Request:0x0000026084757dd0>, params: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "controller"=>"api/v1/teams", "action"=>"create", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTeam Create (0.5ms)[0m  [1m[32mINSERT INTO "teams" ("name", "division_id", "managerName", "managerContact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Team Update the 2nd"], ["division_id", 2], ["managerName", "Karan the 2nd"], ["managerContact", nil], ["created_at", "2022-08-18 07:59:48.412754"], ["updated_at", "2022-08-18 07:59:48.412754"]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+Completed 201 Created in 28ms (Views: 0.7ms | ActiveRecord: 3.7ms | Allocations: 13523)
+
+
+Started POST "/api/v1/games/3/divisions/2/teams" for ::1 at 2022-08-18 13:44:58 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::TeamsController#create as */*
+  Parameters: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:48:in `set_game'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."game_id" = ? AND "divisions"."id" = ? LIMIT ?[0m  [["game_id", 3], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:44:in `set_division'
+[31mUnpermitted parameters: :created_at, :updated_at, :game_id, :team. Context: { controller: Api::V1::TeamsController, action: create, request: #<ActionDispatch::Request:0x00000260832e3db8>, params: {"division_id"=>"2", "name"=>"Team Update the 2nd", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z", "controller"=>"api/v1/teams", "action"=>"create", "game_id"=>"3", "team"=>{"name"=>"Team Update the 2nd", "division_id"=>"2", "managerName"=>"Karan the 2nd", "managerContact"=>"988988 update", "created_at"=>"2022-08-18T07:37:27.934Z", "updated_at"=>"2022-08-18T07:53:08.476Z"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions" WHERE "divisions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTeam Create (0.7ms)[0m  [1m[32mINSERT INTO "teams" ("name", "division_id", "managerName", "managerContact", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Team Update the 2nd"], ["division_id", 2], ["managerName", "Karan the 2nd"], ["managerContact", "988988 update"], ["created_at", "2022-08-18 07:59:58.479125"], ["updated_at", "2022-08-18 07:59:58.479125"]]
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/teams_controller.rb:17:in `create'
+Completed 201 Created in 25ms (Views: 0.4ms | ActiveRecord: 4.0ms | Allocations: 13446)
+
+
