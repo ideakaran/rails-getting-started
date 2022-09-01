@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_18_052850) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_20_083953) do
   create_table "divisions", force: :cascade do |t|
     t.string "name"
     t.integer "game_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
     t.index ["game_id"], name: "index_divisions_on_game_id"
+    t.index ["user_id"], name: "index_divisions_on_user_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -24,6 +26,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_18_052850) do
     t.string "governingBody"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_games_on_user_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -33,9 +37,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_18_052850) do
     t.string "managerContact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
     t.index ["division_id"], name: "index_teams_on_division_id"
+    t.index ["user_id"], name: "index_teams_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "user_type"
   end
 
   add_foreign_key "divisions", "games"
+  add_foreign_key "divisions", "users"
+  add_foreign_key "games", "users"
   add_foreign_key "teams", "divisions"
+  add_foreign_key "teams", "users"
 end

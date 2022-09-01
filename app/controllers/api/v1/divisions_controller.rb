@@ -1,9 +1,10 @@
 class Api::V1::DivisionsController < ApplicationController
+  before_action :authorize
   before_action :set_game
   before_action :set_division, only: %i[show update destroy]
   
   def index
-    render json: @game.divisions
+    render json: is_admin ? Division.order('created_at DESC') : @user.divisions.where("game_Id = ?", params[:game_id])
   end
 
   def show
@@ -11,8 +12,7 @@ class Api::V1::DivisionsController < ApplicationController
   end
   
   def create
-    @division = Division.new(division_params)
-
+    @division = Division.new(division_params.merge(game: @game, user: @user))
     if @division.save
       render json: @division, status: :created
     else
@@ -36,15 +36,17 @@ class Api::V1::DivisionsController < ApplicationController
 
 
   def set_division
-    @division = @game.divisions.find_by!(id: params[:id]) if @game
+    # @division = @user.divisions.find_by!(id: params[:id]) if @game
+    puts "Is admin:: #{is_admin}"
+    @division = is_admin ? Division.find(params[:id]) : @user.divisions.find(params[:id])
   end
 
   def set_game
-    @game = Game.find(params[:game_id])
+    @game = is_admin ? Game.find(params[:game_id]) : @user.games.find(params[:game_id])
   end
 
 
   def division_params
-    params.permit(:game_id, :name)
+    params.permit(:name)
   end
 end
