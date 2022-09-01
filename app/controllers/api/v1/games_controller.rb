@@ -1,7 +1,8 @@
 class Api::V1::GamesController < ApplicationController
+  before_action :authorize
   before_action :set_game, only: %i[show update destroy]
   def index
-    games = Game.order('created_at DESC')
+    games = is_admin ? Game.order('created_at DESC') : @user.games
     #todo handle exception
     render json: {status: 'SUCCESS', message: 'All Games Loaded', data: games}, status: :ok
   end
@@ -11,7 +12,7 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(game_params)
+    @game = Game.new(game_params.merge(user: @user))
     if @game.save
       render json: {status: 'SUCCESS', message: 'Game Save Success', data: @game}, status: :ok
     else
@@ -32,12 +33,12 @@ class Api::V1::GamesController < ApplicationController
     render json: {status: 'SUCCESS', message:'Game Delete Success', data:@game},status: :ok
   end
 
-  def divisions
-    render json: @game.divisions
-  end
+  # def divisions
+  #   render json: @game.divisions
+  # end
 
   def set_game
-    @game = Game.find(params[:id])
+    @game = is_admin ? Game.find(params[:id]) : @user.games.find(params[:id])
   end
 
   private
